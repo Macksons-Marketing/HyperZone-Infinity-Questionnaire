@@ -1,0 +1,10 @@
+.form-popup-bg {
+    visibility: hidden;
+}
+.form-popup-bg.is-visible {
+    visibility: visible;
+}
+
+#answers {
+    visibility: hidden;
+}
