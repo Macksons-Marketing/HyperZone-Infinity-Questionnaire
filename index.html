@@ -9,38 +9,63 @@
         <script src="jquery.js"></script>
         <script src="script.js"></script>
     </head>
-    <form action="https://api.whatsapp.com/send" method="get" target="_blank">
-        <input type="hidden" name="phone" value="27655114487">
-
-        <label for="question1">question 1:</label>
-        <textarea id="question1" name="text"></textarea><br><br>
-        
-        <label for="question2">question 2:</label>
-        <textarea id="question2" name="text"></textarea><br><br>
-
-        <label for="question3">question 3:</label>
-        <textarea id="question3" name="text"></textarea><br><br>
-
-        <label for="question4">question 4:</label>
-        <textarea id="question4" name="text"></textarea><br><br>
-
-        <label for="question5">question 5:</label>
-        <textarea id="question5" name="text"></textarea><br><br>
-
-        <button type="button" onclick="replaceVeiw(document.getElementById('answers'))" id="btnOpenForm">submit</button>
-
-        <div id="answers">
+    <nav>
+        <div class="logo">
+            <img src="assets/img/logo.png" class="logo-img" alt="logo-img">
         </div>
-        <div class="form-popup-bg">
-            <p>are you sure?</p>
-            <button type="submit">submit</button>
-            <button id="btnCloseForm">cancel</button>
+        <div class="subtitle">
+                <h2>
+                    infinite savings
+                </h2>
         </div>
-        
-    </form>
+        <div class="instructions">
+            <h2>
+                instructions
+            </h2>
+            <p>
+                Be a part of the infinite savings coming to Macksons<br>
+                Answer the following questions and stand a chance to win R500.
+            </p>
+        </div>
+    </nav>
+    <body>
+        <div class="form">
+            <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+                <input type="hidden" name="phone" value="27655114487">
 
-    
+                <label for="question1">question 1:</label>
+                <textarea id="question1" name="text"></textarea><br><br>
+                
+                <label for="question2">question 2:</label>
+                <textarea id="question2" name="text"></textarea><br><br>
 
+                <label for="question3">question 3:</label>
+                <textarea id="question3" name="text"></textarea><br><br>
+
+                <label for="question4">question 4:</label>
+                <textarea id="question4" name="text"></textarea><br><br>
+
+                <label for="question5">question 5:</label>
+                <textarea id="question5" name="text"></textarea><br><br>
+
+                <button type="button" onclick="replaceVeiw(document.getElementById('answers'))" id="btnOpenForm">submit</button>
+
+                <div id="answers">
+                </div>
+                <div class="form-popup-bg">
+                    <p>are you sure?</p>
+                    <button type="submit">submit</button>
+                    <button id="btnCloseForm">cancel</button>
+                </div>
+                
+            </form>
+        </div>
+    </body>
+    <footer>
+        <div class="card">
+            <img src="assets/img/card.png">
+        </div>
+    </footer>
 </html>    
     
   
