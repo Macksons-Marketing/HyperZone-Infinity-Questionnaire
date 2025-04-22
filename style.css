@@ -1,11 +1,5 @@
-html {
-    font-size: 1rem;
-    color: white;
-}
 
-body {
-    height: 100%;
-}
+/*all within nav tag*/
 .nav-container{
     display: flex;
     justify-content: space-around;
@@ -14,15 +8,29 @@ body {
     padding-left: 2.5%;
 }
 .logo-img {
-    width: 50%;
+    width:100%;
 }
 .contact {
-    width: 80%;
+    width: 50%;
     padding-right: 5%;
     text-align: right;
 }
 .contact ul li {
     list-style: none;
+}
+
+/*all within body tag*/
+.body-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.body {
+    flex: 1;
+}
+
+.body-text-wrapper {
+    margin: 0 auto;
 }
 .subtitle {
     text-align: center;
@@ -33,8 +41,10 @@ body {
 .form-container {
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 .form {
+    margin: auto 5%;
     color: white;
     padding: 5%;
     text-align: center;
@@ -47,7 +57,7 @@ body {
     border: none;
     width: 75%;
 }
-
+/* popup form */
 .form-popup-bg {
     visibility: hidden;
     position: fixed;
@@ -59,20 +69,17 @@ body {
     display: flex;
     justify-content: center;
 }
-
 .form-popup-bg.is-visible {
     visibility: visible;
 }
-
+/* grouped user input*/
 #answers {
     visibility: hidden;
     position: absolute;
 }
-
 .action-verification {
     background: rgb(5, 5, 157);
-    
-    width: 50%;
+    width: 80%;
     padding: 5%;
     border-radius: 100px;
     margin: auto;
@@ -85,20 +92,22 @@ body {
     justify-content: center;
 }
 .card-img {
-    max-width: 75%;
+    max-width: 100%;
 }
-
+/* all within footer tag*/
 .footer {
+    background: white;
+    padding: 2.5%;
     margin-top: 10%;
     display: flex;
     justify-content: space-around;
-    left: 0;
-    right: 0;
 }
 .footer-img {
     height: 10%;
     width: 15%;
 }
 .btn {
-    font: 13rem;
+    font-size: 2rem;
+    border-radius: 20px;
+    padding: 2.5%;
 }
