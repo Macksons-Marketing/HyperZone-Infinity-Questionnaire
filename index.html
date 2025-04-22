@@ -10,17 +10,32 @@
         <script src="script.js"></script>
     </head>
     <nav>
-        <div class="logo">
-            <img src="assets/img/logo.png" class="logo-img" alt="logo-img">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/img/hz-logo.png" class="logo-img" alt="logo-img">
+            </div>
+            <div class="contact">
+                <ul>
+                    <li>
+                        130 Victoria Street Esctourt
+                    </li>
+                    <li>
+                       Marketing@Macksons.co.za
+                    </li>
+                    <li>
+                        Tel: 074 149 8693
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="subtitle">
-                <h2>
-                    infinite savings
-                </h2>
+                <h1>
+                    Infinite savings
+                </h1>
         </div>
         <div class="instructions">
             <h2>
-                instructions
+                Instructions
             </h2>
             <p>
                 Be a part of the infinite savings coming to Macksons<br>
@@ -29,41 +44,65 @@
         </div>
     </nav>
     <body>
-        <div class="form">
-            <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+        <div class="form-container">
+            <form action="https://api.whatsapp.com/send" method="get" target="_blank" class="form">
                 <input type="hidden" name="phone" value="27655114487">
 
-                <label for="question1">question 1:</label>
-                <textarea id="question1" name="text"></textarea><br><br>
+                <label for="question1">Which is your preferred supermarket in Estcourt?</label><br>
+                <textarea id="question1" name="text" class="textarea"></textarea><br><br>
                 
-                <label for="question2">question 2:</label>
-                <textarea id="question2" name="text"></textarea><br><br>
+                <label for="question2">Is our store clean and tidy?</label><br>
+                <textarea id="question2" name="text" class="textarea"></textarea><br><br>
 
-                <label for="question3">question 3:</label>
-                <textarea id="question3" name="text"></textarea><br><br>
+                <label for="question3">On average do you find what you need in our store?</label><br>
+                <textarea id="question3" name="text" class="textarea"></textarea><br><br>
 
-                <label for="question4">question 4:</label>
-                <textarea id="question4" name="text"></textarea><br><br>
+                <label for="question4">Is our staff polite and helpful</label><br>
+                <textarea id="question4" name="text" class="textarea"></textarea><br><br>
 
-                <label for="question5">question 5:</label>
-                <textarea id="question5" name="text"></textarea><br><br>
+                <label for="question5">Do you have any suggestions for us? If yes please state them</label><br>
+                <textarea id="question5" name="text" class="textarea"></textarea><br><br>
 
-                <button type="button" onclick="replaceVeiw(document.getElementById('answers'))" id="btnOpenForm">submit</button>
+                <button type="button" onclick="replaceVeiw(document.getElementById('answers'))" id="btnOpenForm" class="btn">submit</button>
 
                 <div id="answers">
                 </div>
                 <div class="form-popup-bg">
-                    <p>are you sure?</p>
-                    <button type="submit">submit</button>
-                    <button id="btnCloseForm">cancel</button>
+                    <div class="action-verification">
+                        <h1>
+                            Confirm Submission
+                        </h1>
+                        <h2>
+                            Are you sure you want to submit current answers?
+                        </h2>
+                        <button type="submit" class="btn">
+                            submit
+                        </button>
+                        <button id="btnCloseForm" class="btn">
+                            cancel
+                        </button>
+
+                        <div class="card">
+                            <img src="assets/img/card.png" class="card-img">
+                        </div>
+                        <div class="gratitude">
+                            <h2>
+                                Thank you for participating
+                            </h2>
+                        </div>
+                    </div>
                 </div>
                 
             </form>
         </div>
     </body>
     <footer>
-        <div class="card">
-            <img src="assets/img/card.png">
+        <div class="footer">
+            <img src="assets/img/bd-logo.png" alt="img" class="footer-img">
+            <img src="assets/img/express-logo.png" alt="img" class="footer-img">
+            <img src="assets/img/hz-logo.png" alt="img" class="footer-img">
+            <img src="assets/img/nkr-logo.png" alt="img" class="footer-img">
+            <img src="assets/img/uk-logo.png" alt="img" class="footer-img">
         </div>
     </footer>
 </html>    
