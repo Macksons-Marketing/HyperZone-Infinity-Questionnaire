@@ -5,6 +5,7 @@
             Questionnaire
         </title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="wraps.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="gradiant-background.css">
         <script src="jquery.js"></script>
@@ -29,83 +30,93 @@
                 </ul>
             </div>
         </div>
-        <div class="subtitle">
-                <h1>
-                    Infinite savings
-                </h1>
-        </div>
-        <div class="instructions">
-            <h2>
-                Instructions
-            </h2>
-            <p>
-                Be a part of the infinite savings coming to Macksons<br>
-                Answer the following questions and stand a chance to win R500.
-            </p>
-        </div>
     </nav>
-    <body>
-        <div class="form-container">
-            <form action="https://api.whatsapp.com/send" method="get" target="_blank" class="form">
-                <input type="hidden" name="phone" value="27655114487">
 
-                <label for="question1">Which is your preferred supermarket in Estcourt?</label><br>
-                <textarea id="question1" name="text" class="textarea"></textarea><br><br>
-                
-                <label for="question2">Is our store clean and tidy?</label><br>
-                <textarea id="question2" name="text" class="textarea"></textarea><br><br>
-
-                <label for="question3">On average do you find what you need in our store?</label><br>
-                <textarea id="question3" name="text" class="textarea"></textarea><br><br>
-
-                <label for="question4">Is our staff polite and helpful</label><br>
-                <textarea id="question4" name="text" class="textarea"></textarea><br><br>
-
-                <label for="question5">Do you have any suggestions for us? If yes please state them</label><br>
-                <textarea id="question5" name="text" class="textarea"></textarea><br><br>
-
-                <button type="button" onclick="replaceVeiw(document.getElementById('answers'))" id="btnOpenForm" class="btn">submit</button>
-
-                <div id="answers">
-                </div>
-                <div class="form-popup-bg">
-                    <div class="action-verification">
+    <div class="wrapper">
+        <div class="content">
+            <!-- Main content here -->
+            <body>
+                <div class="body-text-wrapper">
+                    <div class="subtitle">
                         <h1>
-                            Confirm Submission
+                            Infinite savings
                         </h1>
+                    </div>
+                    <div class="instructions">
                         <h2>
-                            Are you sure you want to submit current answers?
+                            Instructions
                         </h2>
-                        <button type="submit" class="btn">
-                            submit
-                        </button>
-                        <button id="btnCloseForm" class="btn">
-                            cancel
-                        </button>
-
-                        <div class="card">
-                            <img src="assets/img/card.png" class="card-img">
-                        </div>
-                        <div class="gratitude">
-                            <h2>
-                                Thank you for participating
-                            </h2>
-                        </div>
+                        <p>
+                            Be a part of the infinite savings coming to Macksons<br>
+                            Answer the following questions and stand a chance to win R500.
+                        </p>
                     </div>
                 </div>
-                
-            </form>
+                <div class="form-container">
+                    <form action="https://api.whatsapp.com/send" method="get" target="_blank" class="form">
+                        <input type="hidden" name="phone" value="27655114487">
+        
+                        <label for="question1">Which is your preferred supermarket in Estcourt?</label><br>
+                        <textarea id="question1" name="text" class="textarea"></textarea><br><br>
+                        
+                        <label for="question2">Is our store clean and tidy?</label><br>
+                        <textarea id="question2" name="text" class="textarea"></textarea><br><br>
+        
+                        <label for="question3">On average do you find what you need in our store?</label><br>
+                        <textarea id="question3" name="text" class="textarea"></textarea><br><br>
+        
+                        <label for="question4">Is our staff polite and helpful</label><br>
+                        <textarea id="question4" name="text" class="textarea"></textarea><br><br>
+        
+                        <label for="question5">Do you have any suggestions for us? If yes please state them</label><br>
+                        <textarea id="question5" name="text" class="textarea"></textarea><br><br>
+        
+                        <button type="button" onclick="replaceVeiw(document.getElementById('answers'))" id="btnOpenForm" class="btn">submit</button>
+        
+                        <div id="answers">
+                        </div>
+                        <div class="form-popup-bg">
+                            <div class="action-verification">
+                                <h1>
+                                    Confirm Submission
+                                </h1>
+                                <h2>
+                                    Are you sure you want to submit current answers?
+                                </h2>
+                                <button type="submit" class="btn">
+                                    submit
+                                </button>
+                                <button id="btnCloseForm" class="btn">
+                                    cancel
+                                </button>
+        
+                                <div class="card">
+                                    <img src="assets/img/card.png" class="card-img">
+                                </div>
+                                <div class="gratitude">
+                                    <h2>
+                                        Thank you for participating
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </body>
         </div>
-    </body>
-    <footer>
-        <div class="footer">
-            <img src="assets/img/bd-logo.png" alt="img" class="footer-img">
-            <img src="assets/img/express-logo.png" alt="img" class="footer-img">
-            <img src="assets/img/hz-logo.png" alt="img" class="footer-img">
-            <img src="assets/img/nkr-logo.png" alt="img" class="footer-img">
-            <img src="assets/img/uk-logo.png" alt="img" class="footer-img">
-        </div>
-    </footer>
-</html>    
+        
+        <footer class="footer-wrapper">
+            <!-- Footer content here -->
+            <div class="footer">
+                <img src="assets/img/bd-logo.png" alt="img" class="footer-img">
+                <img src="assets/img/express-logo.png" alt="img" class="footer-img">
+                <img src="assets/img/hz-logo.png" alt="img" class="footer-img">
+                <img src="assets/img/nkr-logo.png" alt="img" class="footer-img">
+                <img src="assets/img/uk-logo.png" alt="img" class="footer-img">
+            </div>
+        </footer>
+    </div>
     
-  
+    
+</html> 
