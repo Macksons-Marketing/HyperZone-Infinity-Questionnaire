@@ -56,8 +56,8 @@
                     </div>
                 </div>
                 <div class="form-container">
-                    <form action="https://api.whatsapp.com/send" method="get" target="_blank" class="form">
-                        <input type="hidden" name="phone" value="27655114487">
+                    <form  class="form">
+                        
         
                         <label for="question1">
                             Iyiphi isuphamakethe oyithandayo e-Estcourt?
@@ -94,14 +94,17 @@
                         <textarea id="question5" name="text" class="textarea" required></textarea>
                         <br><br>
         
-                        <button type="button" onclick="replaceVeiw(document.getElementById('answers'))" id="btnOpenForm" class="btn">
-                            submit
-                        </button>
+                        <button type="button" onclick="replaceVeiw(document.getElementById('answers'))" id="btnOpenForm" class="btn">submit</button>
         
-                        <div id="answers">
-                        </div>
-                        <div class="form-popup-bg">
-                            <div class="action-verification">
+                        
+                        
+                        
+                    </form>
+                    <div class="form-popup-bg">
+                        <div class="action-verification">
+                            <form action="https://api.whatsapp.com/send" method="get" target="_blank" class="form">
+                                <div id="answers">
+                                </div>
                                 <h1>
                                     Confirm Submission
                                 </h1>
@@ -123,9 +126,9 @@
                                         Thank you for participating
                                     </h2>
                                 </div>
-                            </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </body>
         </div>
