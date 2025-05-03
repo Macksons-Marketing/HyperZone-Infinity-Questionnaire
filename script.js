@@ -35,5 +35,5 @@ function replaceVeiw() {
 
     let answers = '1.'+ question1.toString() +' ' + '2.'+ question2.toString() + ' ' + '3.' + question3.toString() + ' ' + '4.' + question4.toString() + ' ' + '5.' + question5.toString(); 
     
-    document.getElementById("answers").innerHTML = `<input type="hidden" name="phone" value="27655114487"> <textarea name='text'>${answers}</textarea>`;
+    document.getElementById("answers").innerHTML = `<input type="hidden" name="phone" value="2783374866"> <textarea name='text'>${answers}</textarea>`;
   }
